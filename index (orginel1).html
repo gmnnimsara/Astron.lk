@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta description="Astron.lk - Your hub for creativity and premium products including software packs, e-money courses, and Adobe tools">
+    <title>Astron.lk - Explore Creativity</title>
+    <!-- Add Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Keep only custom styles that aren't easily replicated with Tailwind */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 1;
+        }
+
+        .hero * {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+    <header class="bg-blue-600 text-white py-5 px-4 text-center shadow-md">
+        <img src="https://i.ibb.co/2y5FmsK/bef35a014db80996.jpg" alt="Astron.lk Logo" class="max-w-[100px] h-auto mx-auto">
+        <h1 class="text-3xl font-bold mt-4">Welcome to Astron.lk</h1>
+        <p class="mt-2">Your hub for creativity and premium products</p>
+    </header>
+
+    <nav class="sticky top-0 flex justify-center bg-gray-800 z-50" role="navigation" aria-label="Main navigation">
+        <a href="#" class="text-white px-6 py-4 hover:bg-gray-700 transition-colors" aria-current="page">Home</a>
+        <a href="#products" class="text-white px-6 py-4 hover:bg-gray-700 transition-colors">Products</a>
+        <a href="#about" class="text-white px-6 py-4 hover:bg-gray-700 transition-colors">About</a>
+        <a href="https://wa.me/94784280074" target="_blank" rel="noopener" class="text-white px-6 py-4 hover:bg-gray-700 transition-colors">Contact</a>
+    </nav>
+
+    <main>
+        <div class="hero relative text-center py-20 px-4 bg-cover bg-center min-h-[400px] flex flex-col justify-center" 
+             style="background-image: url('https://i.ibb.co/61gXLtx/4f9926ea326671da.jpg')" 
+             role="banner">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 text-shadow">Discover Your Style</h1>
+            <p class="text-lg md:text-xl text-white max-w-3xl mx-auto">Explore unique and handcrafted products tailored for you.</p>
+        </div>
+
+        <section id="products" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-8 max-w-7xl mx-auto" aria-label="Products">
+            <div class="bg-white rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <img src="https://i.ibb.co/N241cwM/251b0ea0ca0b1bf6.jpg" alt="Screenshot of Software Pack contents" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Software Pack</h3>
+                    <p class="text-gray-600 mb-4">A complete bundle of essential software tools for your digital needs.</p>
+                    <button onclick="window.location.href='https://wa.me/94784280074?text=I%20am%20interested%20in%20Software%20Pack'" 
+                            class="w-full bg-green-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                            aria-label="Buy Software Pack">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <img src="https://i.ibb.co/D4612vj/32c9083218f717db.jpg" alt="Preview of E-Money Course content" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">E-Money Course</h3>
+                    <p class="text-gray-600 mb-4">Learn to earn online with our comprehensive step-by-step course.</p>
+                    <button onclick="window.location.href='https://wa.me/94784280074?text=I%20am%20interested%20in%20E-Money%20Course'" 
+                            class="w-full bg-green-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                            aria-label="Buy E-Money Course">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <img src="https://i.ibb.co/QHvjvP2/4d9595516a6d2b45.jpg" alt="Sample from Reels Video Pack" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Reels Video Pack</h3>
+                    <p class="text-gray-600 mb-4">Ready-to-use reels and templates for your social media success.</p>
+                    <button onclick="window.location.href='https://wa.me/94784280074?text=I%20am%20interested%20in%20Reels%20Video%20Pack'" 
+                            class="w-full bg-green-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                            aria-label="Buy Reels Video Pack">Buy Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg transition-transform duration-300 hover:-translate-y-2">
+                <img src="https://i.ibb.co/WcpBCqJ/93292639be3cf92e.jpg" alt="Adobe Master Pack toolkit preview" class="w-full h-48 object-cover rounded-t-xl" loading="lazy">
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold mb-2">Adobe Master Pack</h3>
+                    <p class="text-gray-600 mb-4">Complete suite of Adobe tools you need for professional creative projects.</p>
+                    <button onclick="window.location.href='https://wa.me/94784280074?text=I%20am%20interested%20in%20Adobe%20Master%20Pack'" 
+                            class="w-full bg-green-500 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors"
+                            aria-label="Buy Adobe Master Pack">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="bg-gray-100 py-16 px-4 text-center" aria-label="About Us">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-3xl font-bold mb-6">About</h2>
+                <p class="text-gray-700">My name is Nethmintha Nimsara, based in Sri Lanka. I am passionate about bringing creativity and quality products to customers worldwide.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6 px-4 text-center mt-10">
+        <p>&copy; 2024 Astron.lk | All rights reserved.</p>
+    </footer>
+</body>
+</html>
